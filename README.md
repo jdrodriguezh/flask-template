@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/github/license/jdrodriguezh/flask-template.svg) ![Issues](https://img.shields.io/github/issues/jdrodriguezh/flask-template.svg) ![forks](https://img.shields.io/github/forks/jdrodriguezh/flask-template) ![stars](https://img.shields.io/github/stars/jdrodriguezh/flask-template) ![size](https://img.shields.io/github/repo-size/jdrodriguezh/flask-template)
 
-This is a template to start developing [Flask](https://flask.palletsprojects.com/en/2.0.x/) projects. The project includes sample tests with Python's built-in testing framework ```unittest```, how the project folders should be structured and good practices of Python and Flask.
+This is a template to start developing [Flask](https://flask.palletsprojects.com/en/2.0.x/) projects. The project includes sample tests with Python's built-in testing framework [unittest](https://docs.python.org/3/library/unittest.html), how the project folders should be structured and good practices of Python and Flask.
 
 ## Motivation :question:
 
@@ -43,7 +43,7 @@ Runs the project in the development mode.
 
 ### `flask db init`
 
-Adds the ```migrations``` folder to your project. This needs to be ran only once, when running your first migration.
+Adds the ```migrations``` folder to your project. This needs to be run only once, when running your first migration.
 
 ### `flask db migrate`
 
@@ -53,7 +53,7 @@ Generates the migration script.
 
 Applies the migration to the database.
 
-**IMPORTANT:** Only ```flask db migrate``` and ```flask db upgrade``` need to be ran every time the models change.
+**IMPORTANT:** Only ```flask db migrate``` and ```flask db upgrade``` need to be run every time the models change.
 
 ### `py -m unittest -v`
 
