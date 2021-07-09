@@ -1,9 +1,10 @@
 import unittest
 from flask import Flask
 from app.main.routes import main_api
+from app import create_app
 
-test_app = Flask(__name__)
-test_app.register_blueprint(main_api)
+test_app = create_app()
+test_app.register_blueprint(main_api, name="test_main_api")
 
 
 class TestMainBlueprint(unittest.TestCase):
