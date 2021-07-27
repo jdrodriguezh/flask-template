@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 import config
 
 db = SQLAlchemy()
@@ -21,5 +22,6 @@ def create_app(config_env=""):
   app.register_blueprint(cars_api, url_prefix='/cars')
   app.register_blueprint(employees_api, url_prefix='/employees')
   app.register_blueprint(main_api)
+  CORS(app)
 
   return app
